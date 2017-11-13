@@ -18,6 +18,7 @@ public partial class GUI_NoticiasEventos : System.Web.UI.Page {
         DataTable dt = new DataTable();
         dt.Columns.Add("Seccion");
         dt.Columns.Add("Title");
+        dt.Columns.Add("Ver");
         //SQl query for news.
         ConexionModel cm = new ConexionModel();
         SqlCommand cmd = new SqlCommand();
@@ -86,6 +87,12 @@ public partial class GUI_NoticiasEventos : System.Web.UI.Page {
 
     protected void bttnReadNew_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("NoticiaEventosView.aspx");
+        Response.Redirect("NoticiasEventosView.aspx");
+    }
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Session["newtitle"] = (grdData.SelectedRow.FindControl("lblNew") as Label).Text;
+        Response.Redirect("NoticiasEventosView.aspx");
+
     }
 }

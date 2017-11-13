@@ -36,20 +36,21 @@
         </asp:Panel> 
 
         <div style="margin-left:19.5%; text-align:center;">
-            <asp:gridview ID="grdData" runat="server" Font-Names="Bebas Neue" Font-Size="20pt" ForeColor="White"
+            <asp:GridView  ID="grdData" runat="server" Font-Names="Bebas Neue" Font-Size="20pt" ForeColor="White"
                 AutoGenerateColumns="False" CellPadding="4" PageSize="5"
-                 GridLines="None" Width="800" AllowPaging="True"
-
+                GridLines="None" Width="800" AllowPaging="True"
+                OnSelectedIndexChanged="GridView1_SelectedIndexChanged"       
                 OnPageIndexChanging="grdData_PageIndexChanging">
                 <alternatingrowstyle BackColor="White" ForeColor="#261B29"></alternatingrowstyle>
                 <columns>
                     <asp:BoundField DataField="Seccion" HeaderText="Sección" />
-                    <asp:BoundField DataField="Title" HeaderText="Título" />
-                    <asp:TemplateField ShowHeader="False">
+                    <asp:TemplateField HeaderText="Title">
                         <ItemTemplate>
-                            <asp:Button ID="bttnTitle" runat="server" Text="Ver" ForeColor="Black" Font-Names="Bebas Neue" BackColor="White" Font-Size="20pt" BorderStyle="None"></asp:Button>
+                            <asp:Label ID="lblNew" runat="server" 
+                              Text='<%# Eval("Title") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
+                    <asp:ButtonField Text="Ver" CommandName="Select" />
                </columns>
                     
                 <editrowstyle BackColor="#FFDE2F"></editrowstyle>
@@ -70,10 +71,8 @@
                 <sortedascendingheaderstyle BackColor="#506C8C"></sortedascendingheaderstyle>
                 <sorteddescendingcellstyle BackColor="#FFFDF8"></sorteddescendingcellstyle>
                 <sorteddescendingheaderstyle BackColor="#6F8DAE"></sorteddescendingheaderstyle>
-            </asp:gridview>
+            </asp:GridView>
         </div>
-
-        
     </form>
     
 </body>
