@@ -95,6 +95,7 @@ public partial class GUI_Eventos : System.Web.UI.Page
     {
         Session["newtitle"] = (grdData.SelectedRow.FindControl("lblNew") as Label).Text;
         Response.Redirect("NoticiasEventosView.aspx");
+        //
 
     }
 }
