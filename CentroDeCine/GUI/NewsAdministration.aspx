@@ -30,7 +30,7 @@
                 AutoGenerateColumns="False" CellPadding="4" PageSize="5"
                 GridLines="None" Width="800" AllowPaging="True"
                 OnSelectedIndexChanged="GridView1_SelectedIndexChanged"       
-                OnPageIndexChanging="grdData_PageIndexChanging">
+                
                 <alternatingrowstyle BackColor="White" ForeColor="#261B29"></alternatingrowstyle>
                 <columns>
                     <asp:BoundField DataField="Seccion" HeaderText="Sección" />
