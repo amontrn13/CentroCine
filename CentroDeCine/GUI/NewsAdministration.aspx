@@ -60,6 +60,51 @@
                 <sorteddescendingheaderstyle BackColor="#6F8DAE"></sorteddescendingheaderstyle>
             </asp:GridView>
         </div>
+        <asp:Panel ID="Panel2" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="18pt">
+                    &nbsp;Seleccione la noticia que desea eliminar...</asp:Panel>
+                    <div style="margin-left:19.5%; text-align:center;">
+            <asp:GridView  ID="grdData0" runat="server" Font-Names="Bebas Neue" Font-Size="20pt" ForeColor="White"
+                AutoGenerateColumns="False" CellPadding="4" PageSize="5"
+                GridLines="None" Width="800" AllowPaging="True"
+                OnSelectedIndexChanged="GridView2_SelectedIndexChanged">     
+                
+                <alternatingrowstyle BackColor="White" ForeColor="#261B29"></alternatingrowstyle>
+                <columns>
+                    <asp:BoundField DataField="Seccion" HeaderText="Sección" />
+                    <asp:TemplateField HeaderText="Título">
+                        <ItemTemplate>
+                            <asp:Label ID="lblNew0" runat="server" 
+                              Text='<%# Eval("Title") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:ButtonField Text="Eliminar" CommandName="Select" />
+               </columns>
+                    
+                <editrowstyle BackColor="#FFDE2F"></editrowstyle>
+                <footerstyle BackColor="#261B29" Font-Bold="True" 
+
+                ForeColor="White"></footerstyle>
+                <headerstyle BackColor="#FFDE2F" Font-Bold="True" 
+
+                ForeColor="White"></headerstyle>
+                <pagerstyle BackColor="#261B29" ForeColor="White" 
+
+                HorizontalAlign="Center"></pagerstyle>
+                <rowstyle BackColor="#F7F6F3" ForeColor="#333333"></rowstyle>
+                <selectedrowstyle BackColor="#E2DED6" Font-Bold="True" 
+
+                ForeColor="#333333"></selectedrowstyle>
+                <sortedascendingcellstyle BackColor="#E9E7E2"></sortedascendingcellstyle>
+                <sortedascendingheaderstyle BackColor="#506C8C"></sortedascendingheaderstyle>
+                <sorteddescendingcellstyle BackColor="#FFFDF8"></sorteddescendingcellstyle>
+                <sorteddescendingheaderstyle BackColor="#6F8DAE"></sorteddescendingheaderstyle>
+            </asp:GridView>
+        </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnVolver" runat="server" Height="36px" OnClick="btnVolver_Click" Text="Volver" Width="91px" />
     </form>
 </body>
 </html>

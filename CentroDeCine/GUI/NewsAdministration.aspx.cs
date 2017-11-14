@@ -66,10 +66,45 @@ public partial class GUI_NewsAdministration : System.Web.UI.Page
             }
             grdData.DataSource = dt;
             grdData.DataBind();
+
+            grdData0.DataSource = dt;
+            grdData0.DataBind();
             cm.Con.Close();
         }
         catch (Exception ex)
         {
         }
+    }
+
+    protected void GridView2_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+        string noticiaElimiar = (grdData0.SelectedRow.FindControl("lblNew0") as Label).Text;
+        ConexionModel cm = new ConexionModel();
+        SqlCommand cmd = new SqlCommand();
+
+
+        try
+        {
+            cm.Con.Open();
+            cmd.CommandText = "dbo.deleteNew";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cm.Con;
+            cmd.Parameters.AddWithValue("@tittle", noticiaElimiar);
+            cmd.ExecuteNonQuery();
+            cm.Con.Close();
+
+            string myStringVariable = "Se ha Eliminado la noticia";
+            ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + myStringVariable + "');", true);
+            Response.Redirect("NewsAdministration.aspx");
+        }
+        catch (Exception ex)
+        {
+        }
+    }
+
+    protected void btnVolver_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Administracion.aspx");
     }
 }
