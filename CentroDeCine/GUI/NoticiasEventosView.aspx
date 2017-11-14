@@ -33,6 +33,23 @@
                 </asp:DropDownList>
             </div>
         </asp:Panel> 
+
+        <asp:Panel ID="NewInfo" runat="server" Height="319px" HorizontalAlign="Center">
+            <asp:Label ID="lblTitle" runat="server" Text="Título" Width="800px" ForeColor="Black" Font-Names="Bebas Neue" Font-Size="30pt"></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="lblDate" runat="server" Text="Fecha" ForeColor="Black" Font-Names="Bebas Neue" Font-Size="15pt"></asp:Label>
+            <br />
+            <br />
+            <asp:Image ID="ImgNew" runat="server" Width="600px"/>
+            <br />
+            <br />
+            <asp:Label ID="lblText" runat="server"  Text="Text" Width="600px" ForeColor="Black" Font-Names="Bebas Neue" Font-Size="15pt"></asp:Label>
+            <br />
+            <br />
+            <br />
+            <br />        
+        </asp:Panel>
     </form>
 </body>
 </html>
