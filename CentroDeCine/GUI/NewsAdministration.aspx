@@ -7,9 +7,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
-
-
-
 * {box-sizing:border-box}
     </style>
 </head>
@@ -29,7 +26,8 @@
             <asp:GridView  ID="grdData" runat="server" Font-Names="Bebas Neue" Font-Size="20pt" ForeColor="White"
                 AutoGenerateColumns="False" CellPadding="4" PageSize="5"
                 GridLines="None" Width="800" AllowPaging="True"
-                OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                OnSelectedIndexChanged="GridView1_SelectedIndexChanged"       
+                
                 <alternatingrowstyle BackColor="White" ForeColor="#261B29"></alternatingrowstyle>
                 <columns>
                     <asp:BoundField DataField="Seccion" HeaderText="Sección" />
