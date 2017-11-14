@@ -11,4 +11,9 @@ public partial class GUI_Administracion : System.Web.UI.Page
     {
 
     }
+
+    protected void btnAccederNoticiasAdmi_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("NewsAdministration.aspx");
+    }
 }
