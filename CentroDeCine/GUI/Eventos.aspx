@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="NoticiasEventos.aspx.cs" Inherits="GUI_NoticiasEventos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Eventos.aspx.cs" Inherits="GUI_Eventos" %>
 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@
         <asp:Panel ID="PanelNavigator" runat="server" Height="319px" HorizontalAlign="Center">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/IMG/centro.jpg" />
             <div class ="containerLogo">
-                <asp:Label ID="LblTitlePage" runat="server" Text="Noticias" ForeColor="White" Font-Names="Bebas Neue" Font-Size="70pt"></asp:Label>
+                <asp:Label ID="LblTitlePage" runat="server" Text="Eventos" ForeColor="White" Font-Names="Bebas Neue" Font-Size="70pt"></asp:Label>
             </div>
             <div class="containerButtons">
                 <asp:ImageButton ID="BttnImageYT" runat="server" ImageUrl ="~/IMG/yt.png" Width="35" Height="35" OnClientClick = "target='blank'" OnClick="BttnImageYT_Click" />
@@ -76,4 +76,3 @@
     
 </body>
 </html>
-

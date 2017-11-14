@@ -86,7 +86,26 @@
         </asp:Panel>
         <div style="text-align:center">
              <asp:Button ID="BttnLeerMasNoticias" runat="server" Text="Leer más..." ForeColor="Black" Font-Names="Bebas Neue"  onClick="BttnLeerMasNoticias_Click" BackColor="White" Font-Size="15pt" BorderStyle="None" />
-        </div>            
+        </div>  
+        <br />
+        <br />
+        <asp:Panel ID="PnlFreshEvents" runat="server" Height="319px" HorizontalAlign="Center">
+            <div style ="float:left;width:266px; height: 250px; margin-top: 0px; margin-left: 19%; background-color: #FFDE2F; overflow: hidden;">
+                <asp:ImageButton ID="bttnImgEventOne" runat="server"  Width="200px" Height="200px" OnClick="BttnImageNoticiasOne_Click" />
+                <asp:Label ID="Label1" runat="server" Text="Label" Width="266px" Height="50px" ForeColor="Black" Font-Names="Bebas Neue" Font-Size="15pt"></asp:Label>
+            </div>
+            <div style ="float:left;width:266px; height: 250px; margin-top: 0px; margin-left: 0%; background-color: #FFDE2F; overflow: hidden;">
+                <asp:ImageButton ID="bttnImgEventTwo" runat="server"  Width="200px" Height="200px" OnClick="BttnImageNoticiasTwo_Click" />
+                <asp:Label ID="Label2" runat="server" Text="Label" Width="266px" Height="50px" ForeColor="Black" Font-Names="Bebas Neue" Font-Size="15pt"></asp:Label>
+            </div>
+            <div style ="float:left;width:266px; height: 250px; margin-top: 0px; margin-left: 0%; background-color: #FFDE2F; overflow: hidden;">
+                <asp:ImageButton ID="bttnImgEventThree" runat="server"  Width="200px" Height="200px" OnClick="BttnImageNoticiasThree_Click" />
+                <asp:Label ID="Label3" runat="server" Text="Label" Width="266px" Height="50px" ForeColor="Black" Font-Names="Bebas Neue" Font-Size="15pt"></asp:Label>
+            </div>
+        </asp:Panel>
+        <div style="text-align:center">
+             <asp:Button ID="BttnVerMasEventos" runat="server" Text="Ver más..." ForeColor="Black" Font-Names="Bebas Neue"  onClick="BttnVerMasEventos_Click" BackColor="White" Font-Size="15pt" BorderStyle="None" />
+        </div> 
     </form>
     
 </body>

@@ -7,16 +7,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class GUI_NoticiasEventos : System.Web.UI.Page {
-
-    protected void Page_Load(object sender, EventArgs e) {
+public partial class GUI_Eventos : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
         if (!IsPostBack)
             LoadGridData();
     }
 
- 
-
-    private void LoadGridData() {
+    private void LoadGridData()
+    {
         DataTable dt = new DataTable();
         dt.Columns.Add("Seccion");
         dt.Columns.Add("Title");
@@ -28,7 +28,7 @@ public partial class GUI_NoticiasEventos : System.Web.UI.Page {
         try
         {
             cm.Con.Open();
-            cmd.CommandText = "dbo.getNews";
+            cmd.CommandText = "dbo.getEvents";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = cm.Con;
             reader = cmd.ExecuteReader();

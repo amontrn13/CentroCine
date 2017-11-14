@@ -14,6 +14,7 @@ public partial class GUI_Home : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
     	loadNews();
+        loadEvents();
 
     }
 
@@ -73,12 +74,60 @@ public partial class GUI_Home : System.Web.UI.Page
         
     }
 
+    private void loadEvents()
+    {
+        ConexionModel cm = new ConexionModel();
+        SqlCommand cmd = new SqlCommand();
+        SqlDataReader reader;
+        try
+        {
+            cm.Con.Open();
+            cmd.CommandText = "dbo.getTopThreeEvents";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cm.Con;
+            //cmd.Parameters.AddWithValue("@value", "dfgdh");
+            reader = cmd.ExecuteReader();
+            int index = 0;
+            while (reader.Read())
+            {
+                switch (index)
+                {
+                    case 0:
+                        Label1.Text = reader.GetValue(0).ToString();
+                        bttnImgEventOne.ImageUrl = "~/" + reader.GetValue(1).ToString();
+                        break;
+                    case 1:
+                        Label2.Text = reader.GetValue(0).ToString();
+                        bttnImgEventTwo.ImageUrl = "~/" + reader.GetValue(1).ToString();
+                        break;
+                    case 2:
+                        Label3.Text = reader.GetValue(0).ToString();
+                        bttnImgEventThree.ImageUrl = "~/" + reader.GetValue(1).ToString();
+                        break;
+                }
+                index++;
+            }
+            cm.Con.Close();
+        }
+        catch (Exception ex)
+        {
+            LblMensaje.Text = ex.ToString();
+        }
+
+    }
+
     //Buttons Code.
 
     protected void BttnLeerMasNoticias_Click(object sender, EventArgs e)
     {
         Response.Redirect("NoticiasEventos.aspx");
     }
+
+    protected void BttnVerMasEventos_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Eventos.aspx");
+    }
+    
 
     protected void BttnImageDot1_Click(object sender, ImageClickEventArgs e)
     {
