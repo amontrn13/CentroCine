@@ -15,7 +15,6 @@ public partial class GUI_Home : System.Web.UI.Page
     {
     	loadNews();
         loadEvents();
-
     }
 
     private void ActivarBannersSlideShow(int numBanner) {
@@ -186,17 +185,17 @@ public partial class GUI_Home : System.Web.UI.Page
 
     protected void ImageBannerP_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("Preambulo.aspx");
     }
 
     protected void ImageBannerCrfic_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("CRFIC.aspx");
     }
 
     protected void ImageBannerF_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("Fauno.aspx");
     }
 
 

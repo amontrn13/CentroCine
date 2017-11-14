@@ -104,8 +104,8 @@
             </div>
         </asp:Panel>
         <div style="text-align:center">
-             <asp:Button ID="BttnVerMasEventos" runat="server" Text="Ver más..." ForeColor="Black" Font-Names="Bebas Neue"  onClick="BttnVerMasEventos_Click" BackColor="White" Font-Size="15pt" BorderStyle="None" />
-        </div> 
+            <asp:Button ID="BttnVerMasEventos" runat="server" Text="Ver más..." ForeColor="Black" Font-Names="Bebas Neue"  onClick="BttnVerMasEventos_Click" BackColor="White" Font-Size="15pt" BorderStyle="None" />
+             </div> 
     </form>
     
 </body>
