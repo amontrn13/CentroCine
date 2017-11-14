@@ -26,7 +26,7 @@
             <asp:GridView  ID="grdData" runat="server" Font-Names="Bebas Neue" Font-Size="20pt" ForeColor="White"
                 AutoGenerateColumns="False" CellPadding="4" PageSize="5"
                 GridLines="None" Width="800" AllowPaging="True"
-                OnSelectedIndexChanged="GridView1_SelectedIndexChanged"       
+                OnSelectedIndexChanged="GridView1_SelectedIndexChanged">     
                 
                 <alternatingrowstyle BackColor="White" ForeColor="#261B29"></alternatingrowstyle>
                 <columns>
