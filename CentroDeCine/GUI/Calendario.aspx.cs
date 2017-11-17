@@ -15,9 +15,9 @@ public partial class GUI_Calendario : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        calendarios.Add("~/Calendario1");
-        calendarios.Add("~/Calendario2");
-        calendarios.Add("~/Calendario3");
+        calendarios.Add("~/Calendario1.png");
+        calendarios.Add("~/Calendario2.png");
+        calendarios.Add("~/Calendario3.png");
 
     }
 
