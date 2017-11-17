@@ -32,6 +32,21 @@
                 </asp:DropDownList>
             </div>
         </asp:Panel>
+         <asp:Panel ID="NewInfo" runat="server" Height="319px" HorizontalAlign="Center">
+             <div style="text-align:center; margin-left:19%; width:800px; ">
+                 <asp:Image ID="ImgNew" runat="server" width= "800px" ImageUrl="~/IMG/crficinfo.jpg"/>
+            <br />
+            <br />
+            El CRFIC es un festival joven con ganas de ensancharse junto con una audiencia deseosa de desplegar un mapa abismal para peregrinar, con una mirada cotidiana y contemporánea, múltiples historias con sus personajes, realidades, ficciones, humor, nostalgia, crítica social y formas de hacer cine, tan distantes como sea posible de fórmulas comerciales, de clichés.
+
+            Invitamos a los amantes del cine a que conserven estas imágenes no como aburridos souvenirs, sino como una insospechada y conmovedora visión transversal entre gente de todas partes del mundo, con sus olores, sonidos, alimentos y trajes, entre la gente y su ciudad inhóspita o cálida, entre la gente y la naturaleza que abriga o sobrecoge.
+            <br />
+            <br />
+            <br />
+            <br /> 
+            </div>
+                   
+        </asp:Panel>
     </form>
 </body>
 </html>

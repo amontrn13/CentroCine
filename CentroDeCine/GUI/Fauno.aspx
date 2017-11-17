@@ -32,6 +32,24 @@
                 </asp:DropDownList>
             </div>
         </asp:Panel>
+        <asp:Panel ID="NewInfo" runat="server" Height="319px" HorizontalAlign="Center">
+           
+            <div style="text-align:center; margin-left:19%; width:800px; ">
+                 <asp:Image ID="ImgNew" runat="server" width= "800px" ImageUrl="~/IMG/faunoinfo.jpeg"/>
+                <br />
+            <br />
+           El Fauno es un fondo concursable para el financiamiento de proyectos de creadores audiovisuales y/o cinematográficos nacionales, con un monto de ¢250 millones, proveniente del presupuesto institucional del Centro de Cine.
+
+El nombre de El Fauno aspira a reconocer el espíritu emprendedor de los creadores audiovisuales de nuestro país y de otras latitudes, en las que plasmar los sueños en la pantalla implica, en no pocas ocasiones, verdaderos sacrificios, hasta poner en riesgo el patrimonio personal o la propia existencia, como sucedió con Alberto de Goyen, un costarricense que tardó varios años en la concepción y filmación de su proyecto cinematográfico, “El atardecer de un fauno”, sin que lograra ver en pantalla su realización, pues perdió la vida, víctima de una enfermedad.
+
+En ese contexto, la puesta en marcha del Fondo para el Fomento Audiovisual y Cinematográfica-El Fauno busca el fortalecimiento de las industrias culturales del país, incorporando a la pequeña y mediana empresa cinematográfica y audiovisual en el sector formal productivo, con el afán de concretar la oferta exportadora del país en el área de la cinematografía.
+            <br />
+            <br />
+            <br />
+            <br />  
+            </div>
+                  
+        </asp:Panel>
     </form>
 </body>
 </html>
