@@ -94,6 +94,7 @@ public partial class GUI_NoticiasEventos : System.Web.UI.Page {
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
         Session["newtitle"] = (grdData.SelectedRow.FindControl("lblNew") as Label).Text;
+        Session["tipo"] = "noticia";
         Response.Redirect("NoticiasEventosView.aspx");
 
     }

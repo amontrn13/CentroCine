@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Panel ID="panelAgregarNoticias" runat="server" Height="453px" Visible="False">
+            <asp:Panel ID="panelAgregarNoticias" runat="server" Height="453px">
                 Título de la noticia:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="txtTituloNoticia" runat="server" Height="28px" Width="820px"></asp:TextBox>
                 <br />

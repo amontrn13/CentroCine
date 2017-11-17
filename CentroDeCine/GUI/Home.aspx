@@ -24,7 +24,7 @@
                 <asp:ImageButton ID="BttnImageTwitter" runat="server" ImageUrl ="~/IMG/twitter.png" Width="35" Height="35" OnClientClick = "target='blank'" OnClick="BttnImageTwitter_Click"/>
             </div>
             <div class="container">
-                <asp:DropDownList ID="DropDownListMenu" runat="server" BackColor="#47493C" Font-Names="Bebas Neue" Font-Size="20pt" ForeColor="White">
+                <asp:DropDownList ID="DropDownListMenu" runat="server" BackColor="Transparent" Font-Names="Bebas Neue" Font-Size="20pt" ForeColor="White" AutoPostBack="True" OnSelectedIndexChanged="DropDownListMenu_SelectedIndexChanged">
                     <asp:ListItem>Menú</asp:ListItem>
                     <asp:ListItem>Preámbulo</asp:ListItem>
                     <asp:ListItem>Fauno</asp:ListItem>

@@ -94,8 +94,41 @@ public partial class GUI_Eventos : System.Web.UI.Page
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
         Session["newtitle"] = (grdData.SelectedRow.FindControl("lblNew") as Label).Text;
+        Session["tipo"] = "evento";
         Response.Redirect("NoticiasEventosView.aspx");
         //
+
+    }
+    protected void DropDownListMenu_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int indice = DropDownListMenu.SelectedIndex;
+        switch (indice)
+        {
+            case 0:
+                Response.Redirect("Home.aspx", true);
+                break;
+            case 1:
+                Response.Redirect("Preambulo.aspx", true);
+                break;
+            case 2:
+                Response.Redirect("Fauno.aspx", true);
+                break;
+            case 3:
+                Response.Redirect("CRFIC.aspx", true);
+                break;
+            case 4:
+                Response.Redirect("Calendario.aspx", true);
+                break;
+            case 5:
+                Response.Redirect("AboutUS.aspx", true);
+                break;
+            default:
+                Response.Redirect("Home.aspx", true);
+                break;
+
+        }
+
+
 
     }
 }

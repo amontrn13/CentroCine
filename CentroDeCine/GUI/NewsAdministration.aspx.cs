@@ -24,7 +24,7 @@ public partial class GUI_NewsAdministration : System.Web.UI.Page
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
         Session["newtitle"] = (grdData.SelectedRow.FindControl("lblNew") as Label).Text;
-        Response.Redirect("EditingNew.aspx");
+        Response.Redirect("EditingNews.aspx");
     }
 
     public void LoadGridDataNews()

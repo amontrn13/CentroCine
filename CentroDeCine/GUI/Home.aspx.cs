@@ -119,12 +119,12 @@ public partial class GUI_Home : System.Web.UI.Page
 
     protected void BttnLeerMasNoticias_Click(object sender, EventArgs e)
     {
-        Response.Redirect("NoticiasEventos.aspx");
+        Response.Redirect("NoticiasEventos.aspx",true);
     }
 
     protected void BttnVerMasEventos_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Eventos.aspx");
+        Response.Redirect("Eventos.aspx",true);
     }
     
 
@@ -185,18 +185,51 @@ public partial class GUI_Home : System.Web.UI.Page
 
     protected void ImageBannerP_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Preambulo.aspx");
+        Response.Redirect("Preambulo.aspx",true);
     }
 
     protected void ImageBannerCrfic_Click(object sender, EventArgs e)
     {
-        Response.Redirect("CRFIC.aspx");
+        Response.Redirect("CRFIC.aspx",true);
     }
 
     protected void ImageBannerF_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Fauno.aspx");
+        Response.Redirect("Fauno.aspx",true);
     }
 
 
+
+    protected void DropDownListMenu_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int indice = DropDownListMenu.SelectedIndex;
+        switch (indice)
+        {
+            case 0:
+                Response.Redirect("Home.aspx", true);
+                break;
+            case 1:
+                Response.Redirect("Preambulo.aspx", true);
+                break;
+            case 2:
+                Response.Redirect("Fauno.aspx", true);
+                break;
+            case 3:
+                Response.Redirect("CRFIC.aspx", true);
+                break;
+            case 4:
+                Response.Redirect("Calendario.aspx", true);
+                break;
+            case 5:
+                Response.Redirect("AboutUS.aspx", true);
+                break;
+            default:
+                Response.Redirect("Home.aspx", true);
+                break;
+
+        }
+        
+
+
+    }
 }

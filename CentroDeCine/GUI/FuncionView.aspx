@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="NoticiasEventosView.aspx.cs" Inherits="GUI_NoticiaEventosView" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="FuncionView.aspx.cs" Inherits="GUI_FuncionView" %>
 
 <!DOCTYPE html>
 
