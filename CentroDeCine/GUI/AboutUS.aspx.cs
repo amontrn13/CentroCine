@@ -9,6 +9,8 @@ public partial class GUI_AboutUS : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Image1.ImageUrl = "/Contactos.png";
     }
+
+    
 }
